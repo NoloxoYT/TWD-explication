@@ -8,5 +8,40 @@
             </div>
         </div>
     </div>
+    <div class="main_panel">
+    </div>
 </body>
+<script>
+const params = new URLSearchParams(window.location.search);
+const page = params.get("page") || "accueil";
+const mainPanel = document.querySelector(".main_panel");
+switch (page) {
+  case "saisons":
+    mainPanel.innerHTML = `
+      <h1>Bienvenue sur la page d’accueil</h1>
+      <p>Ceci est le contenu de la page d'accueil.</p>
+    `;
+    break;
+
+  case "acteur":
+    mainPanel.innerHTML = `
+      <h1>Contact</h1>
+      <p>Envoyez-nous un message via le formulaire ci-dessous.</p>
+    `;
+    break;
+
+  case "lore":
+    mainPanel.innerHTML = `
+      <h1>À propos</h1>
+      <p>Nous sommes une équipe passionnée par le web.</p>
+    `;
+    break;
+
+  default:
+    mainPanel.innerHTML = `
+      <h1>404 - Page introuvable</h1>
+      <p>La page demandée n'existe pas.</p>
+    `;
+}
+</script>
 </html>
