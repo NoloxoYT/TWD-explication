@@ -45,10 +45,11 @@
         mainPanel.innerHTML = `
           <h1>Bienvenue sur la page d’accueil</h1>
           <div class="warning">
-            <p>
-              ce site contient beaucoup de spoilers sur la série The Walking Dead. Soyez prudent si vous n'êtes pas à jour avec la série !
-            </p>
-            <p> Les dits spoilers seront masquer jusqu'au survol </p>
+          <button class="close-warning">✖</button>
+          <p>
+          Ce site contient beaucoup de spoilers sur la série The Walking Dead. Soyez prudent si vous n'êtes pas à jour avec la série !
+          </p>
+          <p>Les dits spoilers seront masqués jusqu'au survol.</p>
           </div>
           <p> Voici une liste de tout ce qui est present sur le site :</p>
           <ul>
@@ -57,7 +58,7 @@
             <li> Et beaucoup de spoilers ! </li>
           </ul>
           <p> voici un lien utile : <a href ="?page=s01">Saison 1</a></p>
-          
+
             `;
         break;
       case "acteur":
@@ -158,6 +159,9 @@
         document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none');
       }
     });
-  </script>
+document.querySelector('.close-warning').addEventListener('click', () => {
+  document.querySelector('.warning').remove();
+});
+</script>
 </body>
 </html>
