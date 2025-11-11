@@ -1,6 +1,6 @@
 /*
 -------------------------------------------------------------------
-                    Gabriel
+                    sidebar ( pas touche )
 -------------------------------------------------------------------
 */
 
@@ -8,6 +8,8 @@ body {
   display: flex;
   margin: 0;
   font-family: sans-serif;
+  color: white;
+  background-color: #333;
 }
 
 .sidebar {
@@ -17,8 +19,11 @@ body {
   min-height: 100vh;
   padding: 10px;
   box-sizing: border-box;
+  border-radius: 0px 25px 25px 0px;
+  filter: drop-shadow(2px 0 5px rgba(0, 0, 0, 0.3));
 }
 
+/* ===== Dossier ===== */
 .folder .element {
   position: relative;
   margin-bottom: 5px;
@@ -40,7 +45,7 @@ body {
 
 .folder > .element > a:hover {
   background: #444;
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
 /* ===== Liens dropdown ===== */
@@ -64,10 +69,14 @@ body {
   color: #fff;
   transition: all 0.2s ease;
   background: #333;
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
-/* ===== Main panel ===== */
+/* 
+=================================================================
+      main panel ( open bar ( mais delete pas des choses ) )
+=================================================================
+*/
 .main_panel {
   flex: 1;
   padding: 20px;
