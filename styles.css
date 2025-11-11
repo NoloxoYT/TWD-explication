@@ -9,17 +9,17 @@ body {
   margin: 0;
   font-family: sans-serif;
   color: white;
-  background-color: #333;
+  background-color: #1d2127;
 }
 
 .sidebar {
-  background: #111;
+  background: #181b20;
   color: #fff;
   width: 200px;
   min-height: 100vh;
   padding: 10px;
   box-sizing: border-box;
-  border-radius: 0px 25px 25px 0px;
+  border-radius: 0px 15px 15px 0px;
   filter: drop-shadow(2px 0 5px rgba(0, 0, 0, 0.3));
 }
 
@@ -81,4 +81,21 @@ body {
   flex: 1;
   padding: 20px;
   box-sizing: border-box;
+}
+.warning {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.warning:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+a {
+  color: #1e90ff;
+  text-decoration: none;
 }
