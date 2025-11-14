@@ -257,6 +257,7 @@ a {
   height: 100px;
   object-fit: cover;
   border-radius: 10px;
+    user-select: none;
 }
 .actor-card h2 {
   text-align: center;
@@ -264,7 +265,7 @@ a {
 .casting-card h2 {
   text-align: center;
 }
-.s01 {
+.saison-header {
   margin-top: 20px;
   background-color: #333;
   padding: 15px;
@@ -297,7 +298,7 @@ a {
   overflow-y: auto;
   text-align: center;
   position: relative;
-  border: 1px solid #667eea;
+  border: 1px solid linear-gradient(to bottom,#667eea ,#764ba2);
   animation: modalSlide 0.3s ease;
 }
 
