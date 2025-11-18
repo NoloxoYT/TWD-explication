@@ -590,10 +590,8 @@ async function sendChoice(btn, season, choice) {
     b.classList.remove("selected");
   });
 
-  // Met celui cliqué en vert
   btn.classList.add("selected");
   document.title = `formage fraise - ${page}`;
-  // Envoi à l'API
   try {
     const res = await fetch("https://sheet-snt.vercel.app/api/update", {
       method: "POST",
